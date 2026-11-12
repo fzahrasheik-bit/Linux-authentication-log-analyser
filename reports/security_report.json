@@ -1,0 +1,88 @@
+{
+  "source_file": "sample_logs\\auth.log",
+  "total_lines": 12,
+  "failed_attempts": 10,
+  "unique_source_ips": 2,
+  "threshold": 3,
+  "flagged_ips": [
+    {
+      "ip": "203.0.113.10",
+      "failed_attempts": 7,
+      "usernames_targeted": [
+        "admin",
+        "deploy",
+        "oracle",
+        "postgres",
+        "root",
+        "test",
+        "ubuntu"
+      ],
+      "classification": "threshold_exceeded"
+    },
+    {
+      "ip": "198.51.100.23",
+      "failed_attempts": 3,
+      "usernames_targeted": [
+        "backup",
+        "guest"
+      ],
+      "classification": "threshold_exceeded"
+    }
+  ],
+  "attempts_by_ip": {
+    "203.0.113.10": 7,
+    "198.51.100.23": 3
+  },
+  "matched_events": [
+    {
+      "line": 2,
+      "username": "admin",
+      "ip": "203.0.113.10"
+    },
+    {
+      "line": 3,
+      "username": "root",
+      "ip": "203.0.113.10"
+    },
+    {
+      "line": 4,
+      "username": "test",
+      "ip": "203.0.113.10"
+    },
+    {
+      "line": 5,
+      "username": "ubuntu",
+      "ip": "203.0.113.10"
+    },
+    {
+      "line": 6,
+      "username": "oracle",
+      "ip": "203.0.113.10"
+    },
+    {
+      "line": 7,
+      "username": "guest",
+      "ip": "198.51.100.23"
+    },
+    {
+      "line": 8,
+      "username": "guest",
+      "ip": "198.51.100.23"
+    },
+    {
+      "line": 9,
+      "username": "backup",
+      "ip": "198.51.100.23"
+    },
+    {
+      "line": 11,
+      "username": "deploy",
+      "ip": "203.0.113.10"
+    },
+    {
+      "line": 12,
+      "username": "postgres",
+      "ip": "203.0.113.10"
+    }
+  ]
+}
