@@ -22,7 +22,7 @@ This project demonstrates basic security monitoring and log analysis techniques.
 - Uses only the Python standard library
 
 ## Project structure
-
+```text
 linux-auth-log-analyser/
 ├── analyser.py
 ├── sample_logs/
@@ -37,7 +37,7 @@ linux-auth-log-analyser/
 │   └── test_analyser.py
 ├── .gitignore
 └── README.md
-
+```
 ## Technologies used
 
 - Python 3
@@ -73,14 +73,14 @@ py analyser.py sample_logs/auth.log --threshold 5 --out reports
 ```
 
 ## Example output
-
+```text
 === LINUX AUTH LOG ANALYSER ===
 Lines scanned       : 12
 Failed logins       : 10
 Unique source IPs   : 2
 Flagged IPs         : 1
   [ALERT] 203.0.113.10 - 7 failed attempts
-
+```
 
 ## Run tests
 
